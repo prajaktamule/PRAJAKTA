@@ -10,7 +10,7 @@ public class ArrayDescendingOrder {
                 }
             }
         }
-System.out.println("Array1 (Descending Order): ");
+System.out.println("Array1 Descending Order: ");
         for (int num : array1) {
             System.out.print(num + " ");
         }
