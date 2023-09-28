@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT REGISTRATION FORM</title>
+    <style>
+        h1{
+            text-align: center;
+            border-style: double;        
+        }
+        body{
+            background-color: cyan;
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+            text-align: left;
+        }
+        
+    </style>
+    </head>
+    <body>
+    <header style="text-align: center; border:50px">
+        <h1>
+            STUDENT REGISTRATION FORM
+        </h1>
+    </header>
+    <form action="" >
+        <div text-align="center" style="padding: 10px; margin: 10px">
+            <label for="fname">Name : </label>
+            <input type="text" id="name" placeholder="Enter full name">
+        </div>
+
+        <div text-align="center" style="padding: 10px; margin: 10px">
+            <label for="fname">Father's Name : </label>
+            <input type="text" id="father's name">
+        </div>
+
+        <div text-align="center" style="padding: 10px; margin: 10px">
+            <label for="lname">Mother's Name : </label>
+            <input type="text" id="mother's name">
+        </div>
+
+        <div style="padding: 10px; margin: 10px" >
+            <label for="phone number">Phone Number</label>
+            <input type="text" id="Mobile_Number" maxlength="10" placeholder="017xxxxxxxx">
+        </div>
+            <div style="padding: 10px; margin: 10px">
+            <label for="emails">Email : </label>
+            <input type="email" id="emails" placeholder="sample@example.com">
+
+        </div>
+           <div style="padding: 10px; margin: 10px">
+            <lable>
+            <lable for="gender">Gender : </lable>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Others
+            </lable>
+         </div>
+
+        <div style="padding: 10px; margin: 10px">
+             <label for="Date of birth">Date of Birth : </label>
+             <input type="date" id="dob" value="select">
+        </div>
+
+        <div style="padding: 10px; margin: 10px">
+            <label for="add">Address : </label>
+            <input type="text" id="address" placeholder="Street- House- Road-">
+       </div>
+       
+
+        <div style="padding: 10px; margin: 10px">
+             <lable for="Blood Group">Blood Group</lable>
+             <select name="Blood Group">
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+             <option value="AB-">AB-</option>
+            </select>
+          
+         </div>
+
+        <div style="padding: 10px; margin: 10px">
+            <lable for="department">Department : </lable>
+            <lable for="cse">CSE</lable>
+            <input type="radio" name="department" id="cse">
+            <lable for="eee">EEE</lable>
+            <input type="radio" name="department" id="eee">
+            <lable for="bba">BBA</lable>
+            <input type="radio" name="department" id="bba">
+         </div>
+        <div style="padding: 10px; margin: 10px">
+            <lable for="course">Course : </lable>
+            <input type="checkbox" id="fiberoptics" name="fiberoptics">
+            <lable for="C">C</lable>
+            <input type="checkbox" id="C" name="C">
+            <lable for="C++">C++</lable>
+            <input type="checkbox" id="C++" name="C++">
+            <lable for="java">Java</lable>
+            <input type="checkbox" id="java" name="java">
+            <lable for="ai">AI</lable>
+            <input type="checkbox" id="ai" name="ai">
+            <lable for="machine learning">Machine Learning</lable>
+            <input type="checkbox" id="machine learning" name="machine learning">
+        </div>
+            <label for="myfile">Photo : </label>
+            <input type="file" id="myfile" name="myfile"><br><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+</body>
+</html>
