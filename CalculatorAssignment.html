@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+.cal{
+    text-align: center;
+            background-color: lightblue;
+            height: 100vh;
+}
+.cal table{
+    align-items: center;
+            margin-left: 400px;
+            margin-top: 100px;
+}
+.cal input{
+            
+            size: 30px;
+            font-size: 20px;
+        }
+       
+   </style>
+    </head>
+    <body>
+    <div class="cal">
+    <table style="border:none; width: 300px; height: 300px; text-align: center; ">
+      
+    <tr style="text-align: center;">
+
+      <input colspan="4" style="background-color: black; color: white; border: none;" type="text" id="edu" >
+   </tr>
+  
+   <tr style="background-color: rgb(214, 230, 230); text-align: center;" >
+    
+<td><input type="button" value="+" onclick="dis('+')" /></td>
+<td><input type="button" value="-" onclick="dis('-')"/></td>
+<td><input type="button" value="*" onclick="dis('*')"/></td>
+<td><input type="button" value="/" onclick="dis('/')"/></td>
+</tr>
+
+<tr style="background-color: aliceblue; text-align: center;">
+<td><input type="button" value="7" onclick="dis('7')"/></td>
+<td><input type="button" value="8" onclick="dis('8')"/></td>
+<td><input type="button" value="9" onclick="dis('9')"/></td>
+<td rowspan="4" style="background-color: rgb(240, 107, 107);">
+    <input type="button" value="=" onclick="solve()"/></td>
+
+
+</tr>
+<tr style="background-color: aliceblue; text-align: center;">
+   
+    <td><input type="button" value="4" onclick="dis('4')"/></td>
+    <td><input type="button" value="5" onclick="dis('5')"/></td>
+    <td><input type="button" value="6" onclick="dis('6')"/></td>
+
+</tr>
+<tr style="background-color: aliceblue; text-align: center;">
+   
+
+<td><input type="button" value="1" onclick="dis('1')"/></td>
+<td><input type="button" value="2" onclick="dis('2')"/></td>
+<td><input type="button" value="3" onclick="dis('3')"/></td>
+
+</tr>
+<tr style="background-color: aliceblue; text-align: center;">   
+    <td><input type="button" value="0" onclick="dis('0')"/></td>
+    <td><input type="button" value="." onclick="dis('.')"/></td>
+    <td ><input type="button" value="c" onclick="clr()"/></td>
+</tr>
+<script>
+        function clr ()
+        {
+         document.getElementById('edu').value="";
+         }
+          function solve()
+          {
+             
+         let x =document.getElementById('edu').value  
+         let y = eval(x)
+         document.getElementById('edu').value=y
+          }
+           function dis(val)
+           {
+         document.getElementById('edu').value+=val;
+           }
+     
+     </script>
+     </table>
+</div>
+</body>
+</html>
